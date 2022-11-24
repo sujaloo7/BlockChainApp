@@ -1,4 +1,5 @@
 import {BrowserRouter as Router , Route , Routes } from "react-router-dom";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import CoinDetails from "./pages/CoinDetails";
 import Coins from "./pages/Coins";
@@ -13,9 +14,10 @@ function App() {
     <Route path="/" element={<Home/>}/>
     <Route path="/coins" element={<Coins/>}/>
     <Route path="/exchanges" element={<Exchanges/>}/>
-    <Route path="/coins/:id" element={<CoinDetails/>}/>
+    <Route path="/coin/:id" element={<CoinDetails/>}/>
 
   </Routes>
+  <Footer/>
 </Router>
    </>
   );
